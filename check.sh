@@ -18,7 +18,7 @@ do
         url_output=$(curl -s "$url")
 
         # expected to get the Hello World! + libs/output_data.php
-        if ! [[ "$url_output" =~ ^('Hello World!')(.*)(([0-9]*):(([0-9]+([.][0-9]*)?|[.][0-9]+)):([0-9]*))$ ]]; then
+        if ! [[ "$url_output" =~ ^('Hello World!'|'{"status":true,"message":"Hello World!"}')(.*)(([0-9]*):(([0-9]+([.][0-9]*)?|[.][0-9]+)):([0-9]*))$ ]]; then
             echo -e "${RED}❌ $fw ${NC}"
             echo "$url"
 
