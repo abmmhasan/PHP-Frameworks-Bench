@@ -12,6 +12,7 @@ threads=50
 frameworks_list="
 cakephp-5.2
 cakephp-5.3
+cakephp-5.4
 codeigniter-4
 fatfree-3
 kumbia-1.2
