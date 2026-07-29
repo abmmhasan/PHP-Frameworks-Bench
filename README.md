@@ -15,7 +15,7 @@ Benchmarking on components like template engines or ORM/Database libraries is ou
 
 - [PHP Frameworks Bench](#php-frameworks-bench)
   - [Benchmarks](#benchmarks)
-    - [Latest](#latest)
+    - [Latest Benchmark](#latest-benchmark)
     - [OPCache On/Off](#opcache-on)
   - [How to Benchmark](#how-to-benchmark)
   - [Docker](#docker)
@@ -29,7 +29,7 @@ Benchmarking on components like template engines or ORM/Database libraries is ou
 
 ## Benchmarks
 
-### Latest
+### Latest Benchmark
 
 #### Environment
 
@@ -79,11 +79,15 @@ $ bash benchmark.sh -f -rapache
 |cakephp-5.4      |        5,933.67|          88.0|            0.58|      0.3%|
 |nette-3.3.3      |        4,561.40|          67.7|            0.67|      0.9%|
 |codeigniter-4.7.3|        3,087.41|          45.8|            0.58|      1.0%|
+|laravel-13-api   |        1,012.04|          15.0|            0.79|      1.1%|
 |laravel-12.12.2  |           98.17|           1.5|            0.81|     23.8%|
 |laravel-13.8.0   |           92.01|           1.4|            0.81|     25.0%|
 
 > [!TIP]
-> For `Laravel` errors all are `timeout` and it seems the latest updates are not making the most of OPCache.
+> For `Laravel`, all errors are `timeouts`, and it seems the latest updates have issues when OPcache ON.
+
+> [!TIP]
+> ExecutionTime is measured by curl.
 
 
 #### OPCache On
