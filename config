@@ -1,11 +1,15 @@
 # base url
 base="http://127.0.0.1/PHP-Frameworks-Bench"
 
+# benchmark duration
 # 30-3000
 duration=30
 # web servers config max live connections
 connections=250
 threads=50
+# curl request count - for ex-time measurement
+# 1-100
+curl_count=10
 
 # Frameworks list
 # Sorted alphabetically
