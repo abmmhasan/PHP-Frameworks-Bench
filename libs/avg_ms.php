@@ -1,6 +1,6 @@
 <?php
 
-$total = $argv[1];
-$count = $argv[2];
+$total = floatval($argv[1]);
+$count = floatval($argv[2]);
 
 echo $total / $count;
